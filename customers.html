@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadCustomers()">
+
+  <div class="container">
+    <h2>Customer Management</h2>
+
+    <input id="customerName" placeholder="Customer Name">
+    <input id="customerEmail" placeholder="Customer Email">
+    <button onclick="addCustomer()">Add Customer</button>
+
+    <br><br>
+
+    <input id="search" placeholder="Search customer">
+    <button onclick="searchCustomer()">Search</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="list"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

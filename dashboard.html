@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadDashboard()">
+
+  <div class="container dashboard">
+    <h2>Admin Dashboard</h2>
+
+    <p class="welcome">Welcome, Admin </p>
+
+    <div class="stats">
+      <div class="stat-card">
+        <p>Total Customers</p>
+        <h1 id="total">0</h1>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a href="customers.html" class="action-btn">Manage Customers</a>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
